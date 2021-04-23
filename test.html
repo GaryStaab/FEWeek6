@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/mocha/mocha.css">
+</head>
+<body>
+    <div id="mocha"><a href=".">Index</a></div>
+    <div id="messages"></div>
+    <div id="fixtures"></div>
+    <!-- import mocha script -->
+    <script src="node_modules/mocha/mocha.js"></script>
+    <!-- import chai script -->
+    <script src="node_modules/chai/chai.js"></script>
+    <!-- script that you created -->
+    <script src="war.js"></script>
+    <!-- script to setup mocha -->
+    <script>mocha.setup('bdd')</script>
+    <!-- import unit test script  -->
+    <script src="war_test.js"></script>
+    <!-- script to run mocha -->
+    <script>mocha.run();</script>
+</body>
+</html>
